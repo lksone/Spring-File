@@ -1,4 +1,4 @@
-package com.example.file.demo.jmm;
+package com.example.file.demo.jmm.demo1;
 
 /**
  * 证明volidate不具备原子性
