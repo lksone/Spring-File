@@ -4,7 +4,9 @@ package com.example.file.demo.current;
 import java.util.concurrent.Semaphore;
 
 /**
- * Semaphore 是一个限流锁
+ * Semaphore 是一个限流锁(限制同时运行的线程数量)
+ *
+ * @author Administrator
  */
 public class SemaphoreDemo {
 
@@ -15,7 +17,7 @@ public class SemaphoreDemo {
             new Thread(() -> {
                 try {
                     semaphore.acquire();
-                     System.out.println("t1 running");
+                    System.out.println("t1 running");
                     Thread.sleep(100);
                     System.out.println("t1 ent");
                     semaphore.release();
